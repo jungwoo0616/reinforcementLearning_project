@@ -30,4 +30,4 @@ ex3 -  python -m soccer_twos.watch -m1 ppo_agent -m2 a2c_agent
 python -m soccer_twos.watch -m a2c_agent
 
 ### 참조 깃허브
-![참조 깃허브 출처](https://github.com/bryanoliveira/soccer-twos-env?tab=readme-ov-file)
+![https://github.com/bryanoliveira/soccer-twos-env?tab=readme-ov-file](https://github.com/bryanoliveira/soccer-twos-env?tab=readme-ov-file)
