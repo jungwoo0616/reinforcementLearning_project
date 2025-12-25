@@ -1,0 +1,100 @@
+tasks:
+  - name: "Very Easy Goal"
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [11, 14]
+          y: [-3, 3]
+      players:
+        0:
+          rotation_y: [30, 150]
+          position:
+            x: [6, 10]
+            y: [-3, 3]
+
+  - name: "Easy Goal"
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [7, 14]
+          y: [-4, 4]
+        velocity:
+          x: [0, 8]
+          y: [-6, 6]
+      players:
+        0:
+          rotation_y: [0, 360]
+          position:
+            x: [5, 12]
+            y: [-4, 4]
+
+  - name: "Medium Goal"
+    config_fn: none # 별도 함수 사용 안함
+    ranges: # 랜덤 샘플링 범위
+      ball:
+        position: # 공(ball)의 초기 위치 범위
+          x: [0, 14]
+          y: [-5, 5]
+        velocity:  # 공의 초기 속도(velocity) 범위
+          x: [-8, 8]
+          y: [-8, 8]
+      players:
+        0:  # 0번 에이전트(모델 학습하는 에이전트)
+          rotation_y: [0, 360]  # 에이전트가 보는 초기 방향
+          position: # 에이전트의 초기 위치
+            x: [-4, 10]
+            y: [-5, 5]
+
+  - name: "Hard Goal"
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [-10, 14]
+          y: [-6, 6]
+        velocity:
+          x: [-10, 10]
+          y: [-10, 10]
+      players:
+        0:
+          rotation_y: [0, 360]
+          position:
+            x: [-10, 10]
+            y: [-6, 6]
+
+  - name: "Random Players"
+    config_fn: none
+    ranges:
+      ball:
+        position:
+          x: [-10, 14]
+          y: [-6, 6]
+        velocity:
+          x: [-10, 10]
+          y: [-10, 10]
+      players:
+        0:
+          rotation_y: [0, 360]
+          position:
+            x: [-12, 12]
+            y: [-6, 6]
+        1:
+          rotation_y: [0, 360]
+          position:
+            x: [-12, 12]
+            y: [-6, 6]
+          velocity:
+            x: [-10, 10]
+            y: [-10, 10]
+        2:
+          rotation_y: [0, 360]
+          position:
+            x: [-12, 12]
+            y: [-6, 6]
+        3:
+          rotation_y: [0, 360]
+          position:
+            x: [-12, 12]
+            y: [-6, 6]
